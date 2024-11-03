@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "if statements and nasted if", "if statements and nasted if\if statements and nasted if.csproj", "{769BC08B-6696-423A-9908-238C51EEF126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{769BC08B-6696-423A-9908-238C51EEF126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769BC08B-6696-423A-9908-238C51EEF126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769BC08B-6696-423A-9908-238C51EEF126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769BC08B-6696-423A-9908-238C51EEF126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9410BE0B-2C71-44B3-BFF7-5F25A1A4C39E}
+	EndGlobalSection
+EndGlobal

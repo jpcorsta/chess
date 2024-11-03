@@ -1,0 +1,67 @@
+<Grid>
+        <Button x:Name="MyButton" Content="Hello" FontStretch="ExtraExpanded" Click="MyButton_Click">
+
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Firebrick"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="AntiqueWhite"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            
+        </Button>
+    </Grid>
+
+    -----------------------------
+
+    public MainWindow()
+    {
+        {
+            InitializeComponent();
+            Debug.WriteLine($"1 on thread {Thread.CurrentThread.ManagedThreadId}");
+        }
+        private async void MyButton_Click( object sender, RoutedEventArgs e )
+        {
+            Debug.WriteLine($"2 on thread {System.Environment.CurrentManagedThreadId}");
+            await Task.Run(async() => 
+            {
+                var webClient = new HttpClient();
+                var html = await webClient.GetStringAsync("http://angelsix.com/download/solidworks-files");
+            }).ConfigureAwait(true);
+
+            MyButton.Content = "logged in";
+        }
+    }
+
+    -----------------------------
+    public static void(routedEvents Args)
+    {
+        int numberToGuess = new Random(20, 80);
+
+        while(true)
+        {
+            Console.WriteLine("Enter number");
+
+            int num = Convert.toByte(Console.ReadLine());
+
+            if(num == numberToGuess)
+                Console.WriteLine("indeed");
+            else if(num > numberToGuess)
+                Console.WriteLine("You guessed to hi");
+            else if(num < numberToGuess)
+                Console.WriteLine("You guessed to low");
+
+        }
+    }

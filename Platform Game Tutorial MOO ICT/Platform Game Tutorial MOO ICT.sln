@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform Game Tutorial MOO ICT", "Platform Game Tutorial MOO ICT\Platform Game Tutorial MOO ICT.csproj", "{B2A2ED0B-625F-4E7E-BAEA-FC47956C481B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A2ED0B-625F-4E7E-BAEA-FC47956C481B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A2ED0B-625F-4E7E-BAEA-FC47956C481B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A2ED0B-625F-4E7E-BAEA-FC47956C481B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A2ED0B-625F-4E7E-BAEA-FC47956C481B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D65A3D6F-781D-43E7-BFF7-E26D7E03BB32}
+	EndGlobalSection
+EndGlobal
