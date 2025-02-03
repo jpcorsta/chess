@@ -28,7 +28,7 @@ namespace polymorphism
     {
         public virtual void Go()
         {
-
+			Console.WriteLine("The car is moving");
         }
     }
     class Car : Vehicle
