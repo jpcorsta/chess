@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessLogix
+﻿namespace ChessLogix
 {
 	internal class Position
 	{
@@ -47,6 +41,11 @@ namespace ChessLogix
 		public static bool operator !=(Position left, Position right)
 		{
 			return !(left == right);
+		}
+
+		public static Position operator +(Position pos, Direction direction) 
+		{
+			return new Position(pos.Row + direction.RowDelta, pos.Column + direction.ColumnDelta);
 		}
 	}
 }
