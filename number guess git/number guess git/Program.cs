@@ -12,5 +12,4 @@ while (true)
 		Console.WriteLine("low");
 	else if (userInput > numberToGuess)
 		Console.WriteLine("Hi");
-
 }
