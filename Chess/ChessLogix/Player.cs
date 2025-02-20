@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessLogix
+﻿namespace ChessLogix
 {
-	internal enum Player
+	public enum Player
 	{
 		None,
 		White,
@@ -15,7 +9,7 @@ namespace ChessLogix
 
 	public static class PlayerExtensions 
 	{
-		public static Player Opponent(this Player player) 
+		public static Player Opponent(this Player player)
 		{
 			return player switch
 			{
